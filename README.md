@@ -1,9 +1,9 @@
 ## Counter_7
 ------------------------------------------------------------------------------------------------------------------
 ##  Explain what is meant by stateless widget and stateful widget and explain the difference between them.
-# Stateless Widget
+### Stateless Widget
 Is immutable meaning that it cannot be changed. The component and properties remain unchanged. In simpler words, the widgets cannot be change while the application is running.
-# Stateful widget
+### Stateful widget
 Is mutable widget, meaning that it can be changed througout the running time of the application. The appearance can change according the request and then sent it back in a form of response.
 
 ## Mention what widgets you use in this project and explain their functions.
@@ -17,9 +17,9 @@ Is mutable widget, meaning that it can be changed througout the running time of 
 In order to change the UI of stateful widget, we need to use setState() function because it allow us to change the UI of stateful widget. Variables that are affected by setState() fucntion are the variables that are going to be changed.
 
 ## Explain the difference between const and final.
-# Const
+### Const
 can be used to declare immutable variables whose values are constant and must be known at compile time, meaning that the value of the variable must have been assigned a value directly.
-# Final
+### Final
 can be used to declare immutable variables whose values are or are not known at compile time.
 
 ## Explain how you implement the checklist above.
