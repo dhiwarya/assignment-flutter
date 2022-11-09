@@ -23,10 +23,7 @@ can be used to declare immutable variables whose values are constant and must be
 can be used to declare immutable variables whose values are or are not known at compile time.
 
 ## Explain how you implement the checklist above.
-1. Create a new app using 
-"""
-flutter create weeklyasgflutter
-"""
+1. Create a new app using flutter create weeklyasgflutter
 2. Add new function named _decrementcounter to decrement the number
 3. Add new function named _setText() to set the text whether it is odd or even, according to the counter.
 4. Design the interface in scaffold widget to and set the color of even to red and odd to blue.
