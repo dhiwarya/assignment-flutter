@@ -50,7 +50,7 @@ class _MyFormPageState extends State<MyFormPage> {
                 },
                 validator: (String? value) {
                   if (value == null || value.isEmpty) {
-                    return 'Judul tidak boleh kosong!';
+                    return 'Title cannot be empty!';
                   }
                   return null;
                 },
@@ -131,8 +131,8 @@ class _MyFormPageState extends State<MyFormPage> {
                             showDatePicker(
                               context: context,
                               initialDate: _dateBudget,
-                              firstDate: DateTime(1970),
-                              lastDate: DateTime(2099),
+                              firstDate: DateTime(2000),
+                              lastDate: DateTime(2045),
                             ).then((date) {
                               setState(() {
                                 if (date != null) _dateBudget = date;
@@ -190,8 +190,8 @@ class _MyFormPageState extends State<MyFormPage> {
 }
 
 class Budget {
-  String judul, jenis, nominal;
-  DateTime tanggal;
+  String title, type, amount;
+  DateTime date;
   static List<Budget> listBudget = [];
-  Budget(this.judul, this.nominal, this.jenis, this.tanggal);
+  Budget(this.title, this.amount, this.type, this.date);
 }

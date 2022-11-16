@@ -15,7 +15,6 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             title: Row(
               children: const [
-                Icon(Icons.home),
                 Padding(
                   padding: EdgeInsets.only(left: 8.0),
                   child: Text('counter_7'),
@@ -30,10 +29,9 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             title: Row(
               children: const [
-                Icon(Icons.attach_money),
                 Padding(
                   padding: EdgeInsets.only(left: 8.0),
-                  child: Text('Tambah Budget'),
+                  child: Text('Add a new budget'),
                 )
               ],
             ),
@@ -45,10 +43,9 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             title: Row(
               children: const [
-                Icon(Icons.list),
                 Padding(
                   padding: EdgeInsets.only(left: 8.0),
-                  child: Text('Daftar Budget'),
+                  child: Text('Budget Data'),
                 )
               ],
             ),

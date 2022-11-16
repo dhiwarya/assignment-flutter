@@ -56,7 +56,7 @@ class _MyDataState extends State<MyData> {
                   Icons.attach_money,
                   size: 60,
                   color:
-                  budget.jenis == 'Pemasukan' ? Colors.green : Colors.red,
+                  budget.type == 'Income' ? Colors.green : Colors.green,
                 ),
                 const SizedBox(
                   width: 15,
@@ -69,22 +69,22 @@ class _MyDataState extends State<MyData> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            budget.judul,
+                            budget.title,
                             style: const TextStyle(
                               fontWeight: FontWeight.w600,
                               fontSize: 18,
                             ),
                           ),
                           Text(
-                            DateFormat.yMMMEd().format(budget.tanggal),
+                            DateFormat.yMMMEd().format(budget.date),
                             style: const TextStyle(fontStyle: FontStyle.italic),
                           ),
                         ],
                       ),
                       const SizedBox(height: 5),
-                      Text(budget.nominal),
+                      Text(budget.amount),
                       const SizedBox(height: 5),
-                      Text(budget.jenis)
+                      Text(budget.type)
                     ],
                   ),
                 )
