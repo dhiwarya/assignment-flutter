@@ -70,3 +70,33 @@ Navigator.pushReplacement, Push the given route in place of the navigator's exis
 4. Create a page that can return the input in data.dart.
 5. Implement the nav.dart in every pages.
 6. Add, Commit then push to github.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Flutter Web Service Integration
+
+### Can we retrieve JSON data without creating a model first? If yes, is it better than creating a model before retrieving JSON data?
+Yes we can retrieve JSON data without creating a model but it would be inefficient if we're working with many attribute of models.
+
+###  List the widgets that you used in this project and explain their functions.
+- FutureBuilder, a widget that is formed based on the results obtained from a Future
+- AsyncSnapshot, a permanent representation as the latest result of an asynchronous event
+- CircularProgressIndicator, a circle rotates when an asynchronous event occurs
+- GestureDetector, gesture detection, is this time a single touch on the Container of each watchlist
+- Checkbox, creates a box that can be ticked, can return a boolean value
+- Align, create a widget in it
+- RichText, create text that has different styles
+- TextSpan, creates text inside a RichText
+
+### Explain the mechanism of retrieving data from json so it can be shown in Flutter.
+- Retrieve the json data from the website.
+- Decode the json data
+- Convert it into the models that we have created
+- The data can now be shown
+
+###  Explain how you implemented the checklist above.
+1. Create a new page for My Watch List
+2. Make futures to fetch json file from heroku.
+3. Make models for the my watchlist in my watchlist
+4. Create a new page to display the detail of the movies.
+5. Create new route in the nav.dart for navigation to the my watchlist
+6. git add - commit - push

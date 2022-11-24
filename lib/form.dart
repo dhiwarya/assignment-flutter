@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:weeklyasgflutter/models/budget.dart';
 import 'nav.dart';
 
 class MyFormPage extends StatefulWidget {
@@ -187,11 +188,4 @@ class _MyFormPageState extends State<MyFormPage> {
       ),
     );
   }
-}
-
-class Budget {
-  String title, type, amount;
-  DateTime date;
-  static List<Budget> listBudget = [];
-  Budget(this.title, this.amount, this.type, this.date);
 }

@@ -2,9 +2,12 @@ import 'form.dart';
 import 'package:flutter/material.dart';
 import 'main.dart';
 import 'data.dart';
+import 'mywatchlist_page.dart';
+
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
+  static String currentPage = "counter_7";
 
   @override
   Widget build(BuildContext context) {
@@ -52,6 +55,16 @@ class MyDrawer extends StatelessWidget {
             onTap: () {
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) => const MyData()));
+            },
+          ),
+          ListTile(
+            title: const Text('My Watch List'),
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const MyWatchListPage()),
+              );
             },
           ),
         ],
