@@ -4,7 +4,7 @@ import 'dart:convert';
 
 Future<List<MyWatchList>> fetchMyWatchList() async {
   var url =
-  Uri.parse('https://dhiwa-assignment2.herokuapp.com/mywatchlist/json/');
+  Uri.parse('http://localhost:8000/mywatchlist/json/'); //I'm using localhost because I cannot access my heroku.
   var response = await http.get(
     url,
     headers: {
@@ -12,7 +12,7 @@ Future<List<MyWatchList>> fetchMyWatchList() async {
       "Content-Type": "application/json",
     },
   );
-  print(response);
+  // print(response);
 
   var data = jsonDecode(utf8.decode(response.bodyBytes));
 

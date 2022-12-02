@@ -56,7 +56,8 @@ class _MyWatchDetailState extends State<MyWatchDetail> {
                             style: TextStyle(fontWeight: FontWeight.bold)),
                         TextSpan(
                             text: (widget.myWatch.fields.watched)
-                        ),
+                                ? "watched\n"
+                                : "Have not watched\n"),
                         const TextSpan(
                             text: 'Review: ',
                             style: TextStyle(fontWeight: FontWeight.bold)),
